@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#541c2b">
+    <meta name="description" content="Тёплое поздравление с днём рождения для Оли.">
+    <title>Для Оли — с днём рождения!</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main class="card" aria-labelledby="page-title">
+        <div class="card__ornament card__ornament--top" aria-hidden="true">✦</div>
+        <p class="eyebrow">с любовью и теплом</p>
+        <h1 class="card__title" id="page-title">Для тебя,<br><span>Оля</span></h1>
+        <p class="card__intro">Сегодня повод напомнить, какая ты замечательная.</p>
+
+        <section class="envelope" id="envelope" aria-label="Интерактивная открытка">
+            <div class="envelope__glow" aria-hidden="true"></div>
+            <div class="envelope__letter">
+                <p class="letter__salutation">Дорогая Оля!</p>
+                <p>Поздравляю тебя с днём рождения!</p>
+                <p>Желаю тебе всегда сиять и улыбаться. В тебе столько ответственности, доброты и усердия — ты умеешь делать любое дело с душой и на совесть.</p>
+                <p>Ты прекрасный служитель. Пусть Господь обильно благословляет тебя, умножает твоё благосостояние и даёт тебе возможность щедро накрывать большой и богатый стол для дорогих тебе людей.</p>
+                <p>Ты ещё и невероятно вкусно готовишь! Кто знает — может, однажды мы будем бронировать столик в твоём собственном ресторане. Я бы уже записался в постоянные гости.</p>
+                <p class="letter__blessing">Пусть в твоей жизни будет много радости, мира, вдохновения и поводов благодарить Бога. Пусть добро, которое ты отдаёшь другим, возвращается к тебе сторицей.</p>
+                <p class="letter__sign">С днём рождения! <span aria-hidden="true">♥</span></p>
+            </div>
+            <button class="envelope__button" id="open-card" type="button" aria-expanded="false" aria-controls="envelope">
+                <span class="envelope__seal" aria-hidden="true">✦</span>
+                <span class="envelope__button-text">Открыть поздравление</span>
+            </button>
+        </section>
+
+        <button class="surprise-button" id="surprise-button" type="button" disabled>
+            А теперь маленький сюрприз
+            <span aria-hidden="true">↗</span>
+        </button>
+        <p class="surprise" id="surprise" hidden>
+            <span class="surprise__icon" aria-hidden="true">♨</span>
+            <strong>Ресторан «У Оли»</strong>
+            <span>Авторская кухня, щедрые порции и атмосфера любви.</span>
+            <span class="surprise__small">Бронь столика: по знакомству. Оплата: улыбками.</span>
+        </p>
+        <p class="footer-note">«Благословение Господне — оно обогащает» · Притчи 10:22</p>
+        <div class="card__ornament card__ornament--bottom" aria-hidden="true">✦</div>
+    </main>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <div class="sr-only" id="status" role="status" aria-live="polite"></div>
+</body>
+</html>
